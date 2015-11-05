@@ -21,12 +21,12 @@ consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', '
 
 index = 0
 if word[0] in vowels:
-    print word + 'ay'
+    print word + 'yay'
 else:
     if word[0] in consonants:
-        print word[1:] + word[0]
+        word = word[1:] + word[0]
         index += 1
-        word += "yay"
+        word += 'ay'
         print word
 
 

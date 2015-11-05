@@ -23,11 +23,11 @@ index = 0
 if word[0] in vowels:
     print word + 'yay'
 else:
-    if word[0] in consonants:
+    while word[0] not in vowels:
         word = word[1:] + word[0]
         index += 1
-        word += 'ay'
-        print word
+    word += 'ay'
+    print word
 
 
 

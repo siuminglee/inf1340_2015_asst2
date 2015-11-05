@@ -12,15 +12,24 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 
-def pig_latinify(word):
-    """
-    Describe your function
 
-    :param :
-    :return:
-    :raises:
+def pig_latinify():
 
-    """
-    result = ""
+    #assign a,e,i,o,u to a list called vowels
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
-    return result
+    print (input('Enter a word'))
+    word = input()
+
+    if word[0] in vowels:
+        return word + 'hay'
+    else:
+        while word[0] not in vowels:
+            print 'x'
+
+pig_latinify()
+
+
+
+
+

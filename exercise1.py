@@ -19,14 +19,15 @@ word = raw_input("Enter a word: ")
 vowels = ['a', 'e', 'i', 'o', 'u']
 consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
 
-character = 0
-for letter in word:
-    if letter[0] in vowels:
-        print word + 'ay'
-    else:
-        if letter[0] in consonants:
-            print word[1:] + word[0] + "yay"
-        character += 1
+index = 0
+if word[0] in vowels:
+    print word + 'ay'
+else:
+    if word[0] in consonants:
+        print word[1:] + word[0]
+        index += 1
+        word += "yay"
+        print word
 
 
 

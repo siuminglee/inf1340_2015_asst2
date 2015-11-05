@@ -13,23 +13,36 @@ __license__ = "n/a"
 
 
 def pig_latinify(word):
+    """
+    Describe your function
 
-    #convert word to lowercase string
+    :param : word: the word to be converted to pig latin
+    :param : vowels: list containing all vowels
+    :return: word argument converted into pig latin
+
+    """
+    # convert word to lowercase string
     word = str(word.lower())
-    #assign a,e,i,o,u to a list called vowels
+    # assign a,e,i,o,u to a list called vowels
     vowels = ['a', 'e', 'i', 'o', 'u']
 
+    # If first letter is a vowel, print word+yay
     index = 0
     if word[0] in vowels:
-        print word + 'yay'
+        word += 'yay'
+        return word
+    # If first letter is not a vowel, remove all consonants before the first vowel
+    # Add those to the end of the word, and append "ay"
     else:
         while word[0] not in vowels:
             word = word[1:] + word[0]
             index += 1
         word += 'ay'
-        print word
+        return word
 
-pig_latinify("blast")
+print (pig_latinify("whisper"))
+
+
 
 
 

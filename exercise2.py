@@ -21,6 +21,7 @@ def find(input_string, substring, start, end):
     :raises:
 
     """
+
     return -1
 
 

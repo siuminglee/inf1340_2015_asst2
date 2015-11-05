@@ -21,6 +21,13 @@ def find(input_string, substring, start, end):
     :raises:
 
     """
+    index = 0
+    r = 0
+
+    while index < len(input_string):
+        if input_string[index] == substring[r]:
+            while len(substring)
+
 
     return -1
 

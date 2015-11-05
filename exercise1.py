@@ -12,22 +12,24 @@ __copyright__ = "2015 Rachel Lee"
 __license__ = "n/a"
 
 
+def pig_latinify(word):
 
-word = raw_input("Enter a word: ")
+    #convert word to lowercase string
+    word = str(word.lower())
+    #assign a,e,i,o,u to a list called vowels
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
-#assign a,e,i,o,u to a list called vowels
-vowels = ['a', 'e', 'i', 'o', 'u']
-consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+    index = 0
+    if word[0] in vowels:
+        print word + 'yay'
+    else:
+        while word[0] not in vowels:
+            word = word[1:] + word[0]
+            index += 1
+        word += 'ay'
+        print word
 
-index = 0
-if word[0] in vowels:
-    print word + 'yay'
-else:
-    while word[0] not in vowels:
-        word = word[1:] + word[0]
-        index += 1
-    word += 'ay'
-    print word
+pig_latinify("blast")
 
 
 

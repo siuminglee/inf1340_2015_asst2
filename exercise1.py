@@ -41,18 +41,3 @@ def pig_latinify(word):
         return word
 
 print (pig_latinify("whisper"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

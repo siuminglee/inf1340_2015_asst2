@@ -36,6 +36,7 @@ def find(input_string, substring, start, end):
 
 print find("Hello, are you my mummy?", "my", 0, 23)
 
+
 def multi_find(input_string, substring, start, end):
     """
     Describe your function
@@ -49,12 +50,9 @@ def multi_find(input_string, substring, start, end):
     substring = str(substring)
     input_string = str(input_string)
 
-
-
     for index in range(len(input_string)):
         if input_string[index:index+len(substring)] == substring:
             print index, ",",
             index += 1
 
 multi_find("Hello, are you my mummy?", "my", 0, 23)
-

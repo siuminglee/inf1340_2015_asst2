@@ -22,13 +22,18 @@ def find(input_string, substring, start, end):
 
     """
 
+    # Convert arguments to strings
     substring = str(substring)
     input_string = str(input_string)
 
+    # If the substring sequence is found in the input_string sequence,
+    # return the index value where it occurs first
     if substring in input_string:
         for index in range(len(input_string)):
             if input_string[index:index+len(substring)] == substring[0:]:
                 return index
+    # If the substring sequence is not found in the input_string sequence,
+    # return -1
     else:
         return -1
 
@@ -48,6 +53,8 @@ def multi_find(input_string, substring, start, end):
     substring = str(substring)
     input_string = str(input_string)
 
+    # If the substring sequence is found in the input_string sequence,
+    # return the index value where it occurs first
     for index in range(len(input_string)):
         if input_string[index:index+len(substring)] == substring:
             print index, ",",

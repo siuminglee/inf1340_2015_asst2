@@ -8,8 +8,8 @@ This module converts English words to Pig Latin words
 
 __author__ = 'Rachel Lee'
 __email__ = "siuming.lee@mail.utoronto.ca"
-__copyright__ = "2015 Rachel Lee"
-__license__ = "n/a"
+
+
 
 
 def pig_latinify(word):

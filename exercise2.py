@@ -6,10 +6,8 @@ This module converts performs substring matching for DNA sequencing
 
 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
-__license__ = "MIT License"
+__author__ = 'Rachel Lee'
+__email__ = "siuming.lee@mail.utoronto.ca"
 
 
 def find(input_string, substring, start, end):

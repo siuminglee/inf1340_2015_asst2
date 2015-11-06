@@ -6,10 +6,8 @@ Test module for exercise3.py
 
 """
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
-__license__ = "MIT License"
+__author__ = 'Rachel Lee'
+__email__ = "siuming.lee@mail.utoronto.ca"
 
 from exercise3 import union, intersection, difference
 
